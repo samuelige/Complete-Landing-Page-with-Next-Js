@@ -9,7 +9,7 @@ export const NavLink = ({ path, label, children, ...rest }) => {
 
 export const CustomLink = ({ path, label, children, ...rest }) => {
   return (
-    <Link {...rest} href={path}>
+    <Link {...rest} href={path} >
       {children || label}
     </Link>
   );
