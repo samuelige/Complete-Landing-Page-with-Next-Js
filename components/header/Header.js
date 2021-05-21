@@ -13,7 +13,7 @@ const Header = ({ className }) => {
     const [menu, setMenu] = useState(false);
     return (
         <header className={className} id='header' >
-            <div className=' hidden lg:container lg:w-full lg:flex lg:flex-row lg:items-center lg:px-14 lg:py-2'>
+            <div className=' hidden lg:container lg:w-full lg:flex lg:flex-row lg:items-center lg:px-14 lg:py-6'>
 
                 <div className='cursor-pointer'>
                     <Logo src={logoImage}/>

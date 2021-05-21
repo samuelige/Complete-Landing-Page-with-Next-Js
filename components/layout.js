@@ -17,6 +17,8 @@ import Footer from './footer/Footer';
   
   return (
     <React.Fragment>
+      <img loading="lazy" src="https://cdn.tuk.dev/assets/templates/foodies/bg-strip.png" className="absolute right-0 z-0 h-full hero-img-yellow-width lg:block hidden" />
+      <img loading="lazy" src="https://cdn.tuk.dev/assets/templates/foodies/bg-strip.png" className="absolute right-0 z-0 lg:h-96 lg:hidden block" />
       <Sticky innerZ={1001} top={0} onStateChange={handleStateChange}>
         <Header className={`${isSticky ? 'sticky' : 'unSticky'}`} />
       </Sticky>
