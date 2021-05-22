@@ -45,12 +45,12 @@ const Header = ({ className }) => {
             </div>
                 
                 
-            <div className=" p-3 items-center w-full container  lg:hidden">
+            <div className=" p-3 items-center w-full container md:px-10 md:py-12  lg:hidden">
                 <div className='float-left'>
                     <Logo src={logoImage}/>
                 </div>
                 
-                <div className={menu ? "top-100 p-2 border-r bg-white absolute rounded top-0 left-0 right-0 shadow mt-10 md:mt-16" : "hidden p-2 border-r bg-white absolute rounded top-0 left-0 right-0 shadow mt-12 md:mt-16"}>
+                <div className={menu ? "top-100 p-2 border-r bg-white absolute rounded top-0 left-0 right-0 shadow mt-10 md:mt-24" : "hidden p-2 border-r bg-white absolute rounded top-0 left-0 right-0 shadow mt-12 md:mt-16"}>
                     
                     <nav className='flex flex-col space-y-2 mb-4 '>
                     {

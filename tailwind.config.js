@@ -5,7 +5,13 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      textColor: {
+        'midnightblue': '#242d52',  //Customized textColor
+        
+      }
+    },
+    
   },
   variants: {
     extend: {},
