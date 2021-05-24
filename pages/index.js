@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Banner from '../sections/banner';
 import KeyFeature from '../sections/key-feature';
+import ServiceSection from '../sections/service-section';
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <SEO title="NextJS Landing Page"/>
         <Banner/>
         <KeyFeature />
+        <ServiceSection />
       </Layout>
     </div>
   )
