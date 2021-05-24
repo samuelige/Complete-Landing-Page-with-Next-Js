@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
-import Image from 'next/image'
-import Popup from 'reactjs-popup';
 
 import ReactPlayer from 'react-player/lazy'
-import ModalVideo from 'react-modal-video';
 import { IoIosPlay } from 'react-icons/io';
 import serviceImage from '../assets/downtown.jpg'
 import TextFeature from '../components/text-feature';
-import SectionHeader from '../components/section-header';
+import Modal from '../components/custom.modal';
 
 
 const data = {
@@ -42,6 +39,16 @@ export default function ServiceSection() {
   const {subTitle, title} = data
   const [isOpen, setOpen] = useState(false);
 
+  const [showModal, setShowModal] = useState(false);
+
+  const handleModalOpen = () => {
+    setShowModal(true)
+  }
+
+  const handleModalClose = () => {
+      setShowModal(false)
+  }
+
   const handleClick = (e) => {
     e.preventDefault();
 
@@ -58,13 +65,29 @@ export default function ServiceSection() {
           
         />
           
-        <Popup  trigger={
+        {/* <Popup  trigger={
           <div className='border absolute top-28 left-48 sm:top-36 sm:left-64 md:top-40 md:left-72 lg:top-32 lg:left-56  rounded-full w-20 h-20 pt-6 pl-6 border-black '>
             <IoIosPlay className=' cursor-pointer animate-ping  text-4xl' />
           </div>
         } position="right center">
           <ReactPlayer controls={true} url='https://youtu.be/MFuwkrseXVE' />
-        </Popup>
+        </Popup> */}
+
+        <div onClick={ handleModalOpen} className='border absolute top-28 left-48 sm:top-36 sm:left-64 md:top-40 md:left-72 lg:top-32 lg:left-56  rounded-full w-20 h-20 pt-6 pl-6 border-black '>
+          <IoIosPlay  className=' cursor-pointer animate-ping  text-4xl' />
+        </div>
+
+          {
+              showModal ? (
+                <Modal close={handleModalClose}>
+                  <ReactPlayer controls={true} url='https://youtu.be/MFuwkrseXVE' />
+                </Modal>
+              ) : null
+          }
+
+        
+
+
 
       </div>
 
