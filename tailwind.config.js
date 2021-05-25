@@ -8,8 +8,15 @@ module.exports = {
     extend: {
       textColor: {
         'midnightblue': '#242d52',  //Customized textColor
-        
-      }
+      },
+      backgroundImage: theme => ({
+        'heroPattern': "url('./../assets/endlessClouds.svg')",
+      }),
+
+      backgroundColor: theme => ({
+    
+        'DarkRed': '#8B0000'
+       })
     },
     
   },
@@ -18,3 +25,5 @@ module.exports = {
   },
   plugins: [],
 }
+
+
