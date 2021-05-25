@@ -6,6 +6,7 @@ import Banner from '../sections/banner';
 import KeyFeature from '../sections/key-feature';
 import ServiceSection from '../sections/service-section';
 import CoreFeature from '../sections/core-feature';
+import WorkFlow from '../sections/workflow';
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <KeyFeature />
         <ServiceSection />
         <CoreFeature />
+        <WorkFlow />
       </Layout>
     </div>
   )
