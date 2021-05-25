@@ -64,17 +64,9 @@ export default function ServiceSection() {
           alt="Service image"
           
         />
-          
-        {/* <Popup  trigger={
-          <div className='border absolute top-28 left-48 sm:top-36 sm:left-64 md:top-40 md:left-72 lg:top-32 lg:left-56  rounded-full w-20 h-20 pt-6 pl-6 border-black '>
-            <IoIosPlay className=' cursor-pointer animate-ping  text-4xl' />
-          </div>
-        } position="right center">
-          <ReactPlayer controls={true} url='https://youtu.be/MFuwkrseXVE' />
-        </Popup> */}
 
-        <div onClick={ handleModalOpen} className='border absolute top-28 left-48 sm:top-36 sm:left-64 md:top-40 md:left-72 lg:top-32 lg:left-56  rounded-full w-20 h-20 pt-6 pl-6 border-black '>
-          <IoIosPlay  className=' cursor-pointer animate-ping  text-4xl' />
+        <div onClick={ handleModalOpen} className='border absolute top-28 left-48 border-white sm:top-36 sm:left-64 md:top-40 md:left-72 lg:top-32 lg:left-56  rounded-full w-20 h-20 pt-6 pl-6 border-black '>
+          <IoIosPlay  className=' cursor-pointer animate-ping  text-4xl text-white' />
         </div>
 
           {
