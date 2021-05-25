@@ -5,6 +5,7 @@ import SEO from '../components/seo'
 import Banner from '../sections/banner';
 import KeyFeature from '../sections/key-feature';
 import ServiceSection from '../sections/service-section';
+import CoreFeature from '../sections/core-feature';
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <Banner/>
         <KeyFeature />
         <ServiceSection />
+        <CoreFeature />
       </Layout>
     </div>
   )

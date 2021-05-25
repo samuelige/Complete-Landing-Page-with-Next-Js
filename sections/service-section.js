@@ -56,7 +56,7 @@ export default function ServiceSection() {
   }
 
   return (
-    <section className='w-full space-y-5 items-center lg:space-y-0 px-8 md:px-16 pt-20 lg:grid lg:grid-cols-2 lg:gap-8 lg:pt-14' >
+    <section className='w-full space-y-5  items-center justify-center lg:space-y-0 px-8 md:px-16 pt-30 pb-9 lg:grid lg:grid-cols-2 lg:gap-8 lg:pt-14' >
       <div className='w-full relative'>
         <img 
           className="rounded-2xl  w-full object-cover object-center "
@@ -83,7 +83,7 @@ export default function ServiceSection() {
 
       </div>
 
-      <section className='space-y-5'>
+      <section className='space-y-12'>
         <div className='space-y-5'>
           <p className='text-xl text-red-400'>{subTitle}</p>
           <h1 className="text-4xl font-semibold text-midnightblue lg:mr-40 ">{title}</h1>
