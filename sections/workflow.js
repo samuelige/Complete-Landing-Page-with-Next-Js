@@ -39,7 +39,7 @@ export default function WorkFlow() {
         />
       </div>
 
-      <div className='md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-x-6'>
+      <div className='md:grid md:grid-cols-2 md:gap-y-9 lg:grid-cols-4 md:gap-x-6'>
         {
           data && 
           data.map(({id, title, text}) => {
@@ -49,9 +49,9 @@ export default function WorkFlow() {
                   <h1  className='mt-4 text-center text-2xl'>0{id}</h1>
                 </div>
 
-                <div>
-                  <h1>{title}</h1>
-                  <h4>{text}</h4>
+                <div className='text-lg space-y-4'>
+                  <h1 className='font-semibold'>{title}</h1>
+                  <h4 className='text-base'>{text}</h4>
                 </div>
               </div>
             )
