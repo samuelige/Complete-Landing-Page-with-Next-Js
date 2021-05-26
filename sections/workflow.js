@@ -44,7 +44,7 @@ export default function WorkFlow() {
           data && 
           data.map(({id, title, text}) => {
             return (
-              <div className='flex flex-col text-white space-y-6 pb-9 md:pb-0 '>
+              <div key={id} className='flex flex-col text-white space-y-6 pb-9 md:pb-0 '>
                 <div className='border rounded-3xl w-16 h-16 cursor-pointer'>
                   <h1  className='mt-4 text-center text-2xl'>0{id}</h1>
                 </div>
