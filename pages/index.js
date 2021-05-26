@@ -8,6 +8,7 @@ import ServiceSection from '../sections/service-section';
 import CoreFeature from '../sections/core-feature';
 import WorkFlow from '../sections/workflow';
 import Package from '../sections/package';
+import TeamSection from '../sections/team-section';
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
         <CoreFeature />
         <WorkFlow />
         <Package />
+        <TeamSection/>
       </Layout>
     </div>
   )
