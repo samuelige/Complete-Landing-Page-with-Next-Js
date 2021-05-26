@@ -7,7 +7,7 @@ import { data } from '../data/team.data';
 // mx-auto
 export default function TeamSection() {
   return (
-    <section className='py-10 md:py-14 md:px-10 space-y-6'>
+    <section className='py-10 md:py-14 px-5 md:px-10 space-y-6'>
       <div className="text-center">
         <SectionHeader 
           slogan="OUR TEAM"
