@@ -7,6 +7,7 @@ import KeyFeature from '../sections/key-feature';
 import ServiceSection from '../sections/service-section';
 import CoreFeature from '../sections/core-feature';
 import WorkFlow from '../sections/workflow';
+import Package from '../sections/package';
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         <ServiceSection />
         <CoreFeature />
         <WorkFlow />
+        <Package />
       </Layout>
     </div>
   )
